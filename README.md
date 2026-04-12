@@ -170,19 +170,28 @@ The system supports multiple user roles, each with a customized interface, workf
 
 ## ▶️ How to Run
 
-1. Download the  version from Google Drive
-2. Open the folder
-3. Run:
+1. Download the full project files from the Google Drive link provided below
 
-```bash
-runDentalCare.bat
-```
+2. Extract the project folder
 
-Or:
+3. Open the project using Eclipse IDE
 
-```bash
-java -jar last.jar
-```
+4. Make sure all required libraries are added (located in the `lib/` folder)
+
+5. Ensure the database and resource files are in their correct locations
+
+6. Run the project:
+
+   - Open the main class (e.g., `Main.java`)
+   - Right-click → Run As → Java Application
+
+---
+
+## ⚠️ Notes
+
+- The project is intended to run within Eclipse IDE
+- All required resources (database, reports, XML files) are included in the Google Drive folder
+- Some features (such as XML import) depend on file path configuration
 
 ---
 
