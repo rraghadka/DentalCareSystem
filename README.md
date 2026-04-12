@@ -4,6 +4,12 @@
   <img src="https://github.com/user-attachments/assets/3058daff-3dc9-449c-99d8-004219c5d939" width="600"/>
 </p>
 
+## ⚠️ Disclaimer
+
+The mention of brands such as Oral-B and Crest is for illustrative purposes only.
+This project is not affiliated with, sponsored by, or endorsed by any of these companies.
+All brand references are used as part of a UI demonstration.
+
 
 ## 📌 Overview
 
@@ -218,3 +224,11 @@ https://drive.google.com/file/d/1M5EmAmC2wqOB-RwKmCPRknaWjcgHSh1P/view?usp=shari
 ## 👩‍💻 Author
 
 Developed as part of an academic project for dental clinic management.
+
+
+## 📌 Inspiration & Credits
+
+This project is inspired by  (https://www.dentalcare.com/en-us) .
+Some images used in this project are taken from publicly available sources for demonstration purposes only.
+
+All rights belong to their respective owners.  
