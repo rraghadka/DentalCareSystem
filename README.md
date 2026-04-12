@@ -170,7 +170,7 @@ The system supports multiple user roles, each with a customized interface, workf
 
 ## ▶️ How to Run
 
-1. Download the executable version from Google Drive
+1. Download the  version from Google Drive
 2. Open the folder
 3. Run:
 
@@ -188,14 +188,11 @@ java -jar last.jar
 
 ## 🔗 Full Project Files
 
-Due to GitHub upload limitations, the full project files (including executable and resources) are available here:
+Due to GitHub upload limitations, the full project files ( with resources) are available here:
 
 
 👉 Full Project Files:
 https://drive.google.com/file/d/1M5EmAmC2wqOB-RwKmCPRknaWjcgHSh1P/view?usp=sharing
-
-👉 Executable (JAR):
-https://drive.google.com/file/d/1myb2zau7Iz3QnW6MBeFCHGrLMuLk2SB9/view?usp=sharing 
 
 ---
 
