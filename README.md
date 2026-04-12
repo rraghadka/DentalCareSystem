@@ -1,7 +1,5 @@
 <img width="770" height="405" alt="{A6D8E7EF-508F-4C2E-B8D7-CDB5A4346A04}" src="https://github.com/user-attachments/assets/3058daff-3dc9-449c-99d8-004219c5d939" />
 
-<img width="768" height="404" alt="{86A0D0D3-AF05-42B9-8B4A-8C3BABC68CE2}" src="https://github.com/user-attachments/assets/69286736-8214-442d-8748-6d2519c57df3" />
-<img width="501" height="323" alt="{735886C1-0459-458E-AA11-D5B6F68165F0}" src="https://github.com/user-attachments/assets/3ae5216a-96d1-4dd7-9872-9550b7b5d6fc" />
 
 
 # 🦷 DentalCare Management System
