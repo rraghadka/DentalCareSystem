@@ -1,0 +1,123 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="InventoryUsageReport" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="06bdb9e8-802a-47f3-a97a-bf73f5680dda">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<query language="SQL"><![CDATA[SELECT 
+    i.itemName, 
+    i.category, 
+    SUM(CAST(u.quantityUsed AS DOUBLE)) AS quantityUsed
+FROM 
+    TblInventoryItems i
+INNER JOIN 
+    TblTreatmentItemUsage u 
+ON 
+    i.itemID = u.itemID
+GROUP BY 
+    i.itemName, 
+    i.category
+ORDER BY 
+    i.itemName;
+
+
+]]></query>
+	<field name="itemName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="itemName"/>
+		<property name="com.jaspersoft.studio.field.label" value="itemName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="TblInventoryItems"/>
+	</field>
+	<field name="category" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="category"/>
+		<property name="com.jaspersoft.studio.field.label" value="category"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="TblInventoryItems"/>
+	</field>
+	<field name="quantityUsed" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="QUANTITYUSED"/>
+		<property name="com.jaspersoft.studio.field.label" value="quantityUsed"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="TblTreatmentItemUsage"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="81" splitType="Stretch">
+		<element kind="staticText" uuid="e2165870-36eb-4c68-9fc8-b9f36c68f490" mode="Transparent" x="-20" y="0" width="595" height="81" forecolor="#292A87" fontSize="25.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[“Inventory Usage Summary”]]></text>
+		</element>
+	</title>
+	<pageHeader height="45" splitType="Stretch"/>
+	<columnHeader height="51" splitType="Stretch">
+		<element kind="staticText" uuid="49154672-6858-4d2f-bf7b-1f72576db01b" mode="Opaque" x="377" y="5" width="200" height="41" forecolor="#FFFFFF" backcolor="#063F9C" fontSize="16.0" bold="true" hTextAlign="Left">
+			<text><![CDATA[quantity Used]]></text>
+			<box leftPadding="1" rightPadding="1">
+				<pen lineWidth="1.75" lineStyle="Solid"/>
+				<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="1.75" lineStyle="Solid" lineColor="#FFFFFF"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="1.75" lineStyle="Solid" lineColor="#FFFFFF"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="bd3ff127-523f-4a08-bca5-26f2a394ab00" mode="Opaque" x="179" y="5" width="200" height="41" forecolor="#FFFFFF" backcolor="#063F9C" fontSize="16.0" bold="true" hTextAlign="Left">
+			<text><![CDATA[Category ]]></text>
+			<box leftPadding="1" rightPadding="1">
+				<pen lineWidth="1.75" lineStyle="Dashed"/>
+				<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="1.75" lineStyle="Solid" lineColor="#FFFFFF"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="1.75" lineStyle="Solid" lineColor="#FFFFFF"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="efd46418-38fd-461e-8224-56329d3baadf" mode="Opaque" x="-20" y="5" width="200" height="41" forecolor="#FFFFFF" backcolor="#063F9C" fontSize="16.0" bold="true" hTextAlign="Left">
+			<text><![CDATA[Item Name]]></text>
+			<box leftPadding="1" rightPadding="1">
+				<pen lineWidth="1.75" lineStyle="Dashed"/>
+				<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="1.75" lineStyle="Solid" lineColor="#FFFFFF"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="1.75" lineStyle="Solid" lineColor="#FFFFFF"/>
+			</box>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="55" splitType="Stretch">
+			<element kind="textField" uuid="c3a9dfde-b8f8-4877-895d-6348d835e0cf" mode="Transparent" x="180" y="0" width="199" height="54" backcolor="#D9D9D9" fontSize="13.0" bold="true" hTextAlign="Center">
+				<expression><![CDATA[
+$F{category}]]></expression>
+				<box leftPadding="0" rightPadding="1">
+					<pen lineWidth="2.75" lineStyle="Dashed"/>
+					<topPen lineWidth="2.75" lineStyle="Dashed" lineColor="#000000"/>
+					<leftPen lineWidth="2.75" lineStyle="Dashed" lineColor="#000000"/>
+					<bottomPen lineWidth="2.75" lineStyle="Dashed" lineColor="#000000"/>
+					<rightPen lineWidth="2.75" lineStyle="Dashed" lineColor="#000000"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="22137b52-798f-426f-b0ed-d56f08015e71" mode="Transparent" x="-20" y="0" width="200" height="55" backcolor="#D9D9D9" fontSize="13.0" bold="true" hTextAlign="Center">
+				<expression><![CDATA[
+$F{itemName}]]></expression>
+				<box>
+					<pen lineWidth="3.0" lineStyle="Dashed" lineColor="#050000"/>
+					<topPen lineWidth="3.0" lineStyle="Dashed" lineColor="#050000"/>
+					<leftPen lineWidth="3.0" lineStyle="Dashed" lineColor="#050000"/>
+					<bottomPen lineWidth="3.0" lineStyle="Dashed" lineColor="#050000"/>
+					<rightPen lineWidth="3.0" lineStyle="Dashed" lineColor="#050000"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="3c696f9f-93c3-4752-b334-5edaae077250" mode="Transparent" x="380" y="-1" width="195" height="55" backcolor="#D9D9D9" fontSize="13.0" bold="true" hTextAlign="Center">
+				<expression><![CDATA[
+$F{quantityUsed}]]></expression>
+				<box leftPadding="1" rightPadding="1">
+					<pen lineWidth="2.25" lineStyle="Dashed"/>
+					<topPen lineWidth="2.25" lineStyle="Dashed" lineColor="#000000"/>
+					<leftPen lineWidth="2.25" lineStyle="Dashed" lineColor="#000000"/>
+					<bottomPen lineWidth="2.25" lineStyle="Dashed" lineColor="#000000"/>
+					<rightPen lineWidth="2.25" lineStyle="Dashed" lineColor="#000000"/>
+				</box>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="48" splitType="Stretch">
+		<element kind="staticText" uuid="dcafead9-1525-47a5-b56d-62519db95010" mode="Opaque" x="-20" y="-1" width="595" height="41" backcolor="#BCC3D4" fontSize="12.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[
+Generated by DentalCare System
+]]></text>
+		</element>
+	</columnFooter>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>
