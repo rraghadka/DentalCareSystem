@@ -138,7 +138,6 @@ The system supports multiple user roles, each with a customized interface, workf
 
 * Manage inventory (Add / Update / Delete)
 * Manage suppliers
-* Import monthly data from XML *(not fully working)*
 * Access doctor features
 * Generate reports
 * Export data
