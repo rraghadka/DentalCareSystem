@@ -186,9 +186,11 @@ java -jar last.jar
 
 Due to GitHub upload limitations, the full project files (including executable and resources) are available here:
 
-👉 
+
+👉 Full Project Files:
 https://drive.google.com/file/d/1M5EmAmC2wqOB-RwKmCPRknaWjcgHSh1P/view?usp=sharing
 
+👉 Executable (JAR):
 https://drive.google.com/file/d/1myb2zau7Iz3QnW6MBeFCHGrLMuLk2SB9/view?usp=sharing 
 
 ---
