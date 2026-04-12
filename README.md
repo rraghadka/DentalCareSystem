@@ -199,7 +199,6 @@ https://drive.google.com/file/d/1myb2zau7Iz3QnW6MBeFCHGrLMuLk2SB9/view?usp=shari
 
 * Patient management is based on date
 * Dentist management is based on plan status
-* XML import exists but may require improvement
 * Some parts are demo features
 * Developed under academic constraints and time pressure
 
