@@ -16,6 +16,18 @@ All brand references are used as part of a UI demonstration.
 DentalCare is a desktop-based Java application developed to manage dental clinic operations efficiently.
 The system supports multiple user roles, each with a customized interface, workflow, and permissions.
 
+--- 
+
+🦷 Project Description
+
+DentalCare is a comprehensive desktop-based dental clinic management system developed using Java. The application is designed to streamline and automate core clinic operations, including patient management, appointment scheduling, treatment planning, inventory tracking, and billing. The system follows a structured architecture based on the Entity–Control–Boundary (MVC-like) design pattern, ensuring clear separation of responsibilities and maintainability.
+
+The application integrates a Microsoft Access database באמצעות JDBC (UCanAccess) to perform full CRUD operations and manage relational data efficiently. It includes advanced features such as role-based access control (Patient, Dentist, Secretary, Clinic Manager), intelligent appointment scheduling with availability checks and conflict prevention, real-time inventory alerts, and invoice generation.
+
+In addition, the system supports data integration through XML import functionality and generates professional reports (such as Treatment Progress and Revenue Reports) using JasperReports. The user interface is built with Java Swing, featuring dynamic layouts, personalized dashboards, and enhanced user experience with visual elements and animations.
+
+This project demonstrates strong skills in object-oriented programming, database design, system architecture, GUI development, and full-cycle application development—from design (UML diagrams) to implementation and deployment. 
+
 ---
 
 ## 🎨 User Interface
