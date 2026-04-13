@@ -1,4 +1,4 @@
-# 🦷 DentalCare Management System
+# 🦷 Full DentalCare Management System
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/3058daff-3dc9-449c-99d8-004219c5d939" width="600"/>
