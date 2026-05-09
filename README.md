@@ -174,7 +174,7 @@ This project demonstrates strong skills in object-oriented programming, database
 * JasperReports (for generating reports such as invoices, revenue reports, and treatment progress reports)
 * XML (for importing inventory data)
 * JSON (for exporting appointment reports)
-
+* Git & GitHub (version control and project management)
 ---
 
 ## 📂 Project Structure
